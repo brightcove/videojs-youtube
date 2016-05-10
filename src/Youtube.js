@@ -433,6 +433,10 @@ THE SOFTWARE. */
       }
     },
 
+    seeking: function () {
+      return this.isSeeking;
+    },
+
     onSeeked: function() {
       clearInterval(this.checkSeekedInPauseInterval);
       this.isSeeking = false;
